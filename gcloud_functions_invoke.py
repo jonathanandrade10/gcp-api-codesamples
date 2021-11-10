@@ -3,7 +3,10 @@ import os
 import google.auth.transport.requests
 import google.oauth2.id_token
 
-#Environment variable setup that holds the principal json credential
+'''
+Environment variable setup that holds the principal json credential
+https://cloud.google.com/functions/docs/securing/authenticating#authenticating_function_to_function_calls
+'''
 
 key_path = "json-auth-path/account-id.json"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = key_path
